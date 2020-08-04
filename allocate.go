@@ -349,6 +349,7 @@ func findExecPath() string {
 		filepath.Join(os.Getenv("USERPROFILE"), `AppData\Local\Google\Chrome\Application\chrome.exe`),
 
 		// Mac
+		"/Applications/Chromium.app/Contents/MacOS/Chromium",
 		"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
 	} {
 		found, err := exec.LookPath(path)
